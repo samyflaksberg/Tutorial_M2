@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #777;
+}
+.conteudo {
+    display: none; /* Inicia oculto */
+}
+#mostrar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px; /* Adiciona um espaço de 10 pixels abaixo do botão */
+}
+
+#mostrar:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Samy Flaksberg</title>
+    <link rel="stylesheet" href="style6.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Samy Flaksberg</h1>
+    </header>
+
+    <button id="mostrar">Mostrar Conteúdo</button>
+    <div class="conteudo">
+
+    <main>
+        <section>
+            <h2>Dados Pessoais</h2>
+            <ul>
+                <li><strong>Data de nascimento:</strong> 05/09/2005</li>
+                <li><strong>Idade:</strong> 17 anos</li>
+                <li><strong>Telefone:</strong> (11) 97599-1800</li>
+                <li><strong>Email:</strong> sflaksberg@gmail.com</li>
+                <li><strong>Endereço:</strong> Rua Doutor Brasilio Machado, São Paulo, Brasil</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Experiências</h2>
+            <ul>
+                <li>Diretor religioso - Movimento juvenil (2023)</li>
+                <li>Ex-diretor de marketing - Movimento juvenil (2022)</li>
+                <li>Estágio de férias - Apple (2022)</li>
+                <li>Monitor - Movimento juvenil (2023)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Competências</h2>
+            <ul>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Primeiros socorros</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li>Ensino médio completo - Colegio Iavne</li>
+                <li>Ensino superior - Instituto de Tecnologia e Liderança</li>
+            </ul>
+        </section>
+    </main>
+    </div>
+
+    <footer>
+        <p>© 2023 Samy Flaksberg</p>
+    </footer>
+
+    <script>
+       $(document).ready(function() {
+    alert("Currículo do Samy, seja bem-vindo");
+});
+
+$(document).ready(function() {
+    // Ao clicar no botão "Mostrar Conteúdo"
+    $("#mostrar").click(function() {
+        $(".conteudo").toggle(); // Mostra ou oculta o elemento com classe "conteudo"
+
+        // Altera o texto do botão
+        if ($(".conteudo").is(":visible")) {
+            $(this).text("Ocultar Conteúdo");
+        } else {
+            $(this).text("Mostrar Conteúdo");
+        }
+    });
+});
+    </script>
+</body>
+
+</html>
